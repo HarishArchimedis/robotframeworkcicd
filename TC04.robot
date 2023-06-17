@@ -22,10 +22,7 @@ ABBBBB
     Press Keys      //input[@id="password"]     CTRL+V
     ${avalue}   Get Value    //input[@id="password"]
     Log    ${avalue}
- 
-
-
-    Sleep   3
+    Sleep   10
 *** Test Cases ***
 ABBBBB
     [Tags]    sanity
