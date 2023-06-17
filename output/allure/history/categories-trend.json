@@ -1,0 +1,19 @@
+[ {
+  "reportUrl" : "http://172.31.208.1:8080/job/ROBOTFRAMEWORK_TEST/11/allure",
+  "data" : { }
+}, {
+  "reportUrl" : "http://172.31.208.1:8080/job/ROBOTFRAMEWORK_TEST/10/allure",
+  "data" : { }
+}, {
+  "reportUrl" : "http://172.31.208.1:8080/job/ROBOTFRAMEWORK_TEST/9/allure",
+  "data" : { }
+}, {
+  "reportUrl" : "http://172.31.208.1:8080/job/ROBOTFRAMEWORK_TEST/8/allure",
+  "data" : { }
+}, {
+  "reportUrl" : "http://172.31.208.1:8080/job/ROBOTFRAMEWORK_TEST/7/allure",
+  "data" : { }
+}, {
+  "reportUrl" : "http://172.31.208.1:8080/job/ROBOTFRAMEWORK_TEST/6/allure",
+  "data" : { }
+} ]

@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 6.0.2 (Python 3.10.0 on win32)" generated="20230617 15:19:43.864" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Test" source="C:\Users\infoh\PycharmProjects\Automation_Day1_Projects\Robot Test">
+<suite id="s1-s1" name="TC01" source="C:\Users\infoh\PycharmProjects\Automation_Day1_Projects\Robot Test\TC01.robot">
+<test id="s1-s1-t1" name="Positive" line="7">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.saucedemo.com/</arg>
+<arg>chrome</arg>
+<arg>--incognito</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230617 15:19:26.036" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20230617 15:19:26.034" endtime="20230617 15:19:29.021"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230617 15:19:29.024" endtime="20230617 15:19:29.201"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id="user-name"]</arg>
+<arg>jack</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230617 15:19:29.204" level="INFO">Typing text 'jack' into text field '//input[@id="user-name"]'.</msg>
+<status status="PASS" starttime="20230617 15:19:29.202" endtime="20230617 15:19:29.503"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230617 15:19:32.509" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230617 15:19:29.505" endtime="20230617 15:19:32.509"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230617 15:19:32.511" endtime="20230617 15:19:34.668"/>
+</kw>
+<tag>sanity</tag>
+<status status="PASS" starttime="20230617 15:19:26.032" endtime="20230617 15:19:34.669"/>
+</test>
+<status status="PASS" starttime="20230617 15:19:25.762" endtime="20230617 15:19:34.672"/>
+</suite>
+<suite id="s1-s2" name="TC02" source="C:\Users\infoh\PycharmProjects\Automation_Day1_Projects\Robot Test\TC02.robot">
+<test id="s1-s2-t1" name="Positive" line="7">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.saucedemo.com/</arg>
+<arg>chrome</arg>
+<arg>--incognito</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230617 15:19:26.015" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20230617 15:19:26.014" endtime="20230617 15:19:29.123"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230617 15:19:29.124" endtime="20230617 15:19:29.316"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id="user-name"]</arg>
+<arg>jack</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230617 15:19:29.318" level="INFO">Typing text 'jack' into text field '//input[@id="user-name"]'.</msg>
+<status status="PASS" starttime="20230617 15:19:29.316" endtime="20230617 15:19:29.556"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230617 15:19:32.563" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230617 15:19:29.559" endtime="20230617 15:19:32.563"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230617 15:19:32.566" endtime="20230617 15:19:34.715"/>
+</kw>
+<tag>sanity</tag>
+<status status="PASS" starttime="20230617 15:19:26.012" endtime="20230617 15:19:34.716"/>
+</test>
+<status status="PASS" starttime="20230617 15:19:25.762" endtime="20230617 15:19:34.719"/>
+</suite>
+<suite id="s1-s3" name="TC03" source="C:\Users\infoh\PycharmProjects\Automation_Day1_Projects\Robot Test\TC03.robot">
+<test id="s1-s3-t1" name="validation" line="22">
+<kw name="Create List" library="BuiltIn">
+<var>@{role}</var>
+<arg>Platform Group Leader</arg>
+<arg>Platform Group Engineer</arg>
+<arg>Experience Design Leader</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20230617 15:19:26.037" level="INFO">@{role} = [ Platform Group Leader | Platform Group Engineer | Experience Design Leader ]</msg>
+<status status="PASS" starttime="20230617 15:19:26.036" endtime="20230617 15:19:26.038"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>@{id}</var>
+<arg>itest001</arg>
+<arg>itest002</arg>
+<arg>itest003</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20230617 15:19:26.041" level="INFO">@{id} = [ itest001 | itest002 | itest003 ]</msg>
+<status status="PASS" starttime="20230617 15:19:26.040" endtime="20230617 15:19:26.041"/>
+</kw>
+<kw name="Verify the product and platform roles">
+<arg>${role}</arg>
+<arg>${id}</arg>
+<for flavor="IN ZIP">
+<var>${roleval}</var>
+<var>${idval}</var>
+<value>${role}</value>
+<value>${id}</value>
+<iter>
+<var name="${roleval}">Platform Group Leader</var>
+<var name="${idval}">itest001</var>
+<kw name="Convert To Upper Case" library="String">
+<var>${T_P_O}</var>
+<arg>${idval}</arg>
+<doc>Converts string to upper case.</doc>
+<msg timestamp="20230617 15:19:26.047" level="INFO">${T_P_O} = ITEST001</msg>
+<status status="PASS" starttime="20230617 15:19:26.046" endtime="20230617 15:19:26.047"/>
+</kw>
+<kw name="Get Substring" library="String">
+<var>${result1}</var>
+<arg>${T_P_O}</arg>
+<arg>1</arg>
+<doc>Returns a substring from ``start`` index to ``end`` index.</doc>
+<msg timestamp="20230617 15:19:26.050" level="INFO">${result1} = TEST001</msg>
+<status status="PASS" starttime="20230617 15:19:26.049" endtime="20230617 15:19:26.050"/>
+</kw>
+<kw name="Format String" library="String">
+<var>${prod_plat_tpo}</var>
+<arg>${Xpath}</arg>
+<arg>rolesid=${result1}</arg>
+<arg>rolesname=${roleval}</arg>
+<doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
+<msg timestamp="20230617 15:19:26.054" level="INFO">${prod_plat_tpo} = = //div//div[contains(text(), 'TEST001')]/parent::div/parent::div//div[contains(text(), 'Platform Group Leader')]</msg>
+<status status="PASS" starttime="20230617 15:19:26.052" endtime="20230617 15:19:26.055"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${prod_plat_tpo}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230617 15:19:26.057" level="INFO">= //div//div[contains(text(), 'TEST001')]/parent::div/parent::div//div[contains(text(), 'Platform Group Leader')]</msg>
+<status status="PASS" starttime="20230617 15:19:26.056" endtime="20230617 15:19:26.057"/>
+</kw>
+<status status="PASS" starttime="20230617 15:19:26.045" endtime="20230617 15:19:26.059"/>
+</iter>
+<iter>
+<var name="${roleval}">Platform Group Engineer</var>
+<var name="${idval}">itest002</var>
+<kw name="Convert To Upper Case" library="String">
+<var>${T_P_O}</var>
+<arg>${idval}</arg>
+<doc>Converts string to upper case.</doc>
+<msg timestamp="20230617 15:19:26.061" level="INFO">${T_P_O} = ITEST002</msg>
+<status status="PASS" starttime="20230617 15:19:26.060" endtime="20230617 15:19:26.062"/>
+</kw>
+<kw name="Get Substring" library="String">
+<var>${result1}</var>
+<arg>${T_P_O}</arg>
+<arg>1</arg>
+<doc>Returns a substring from ``start`` index to ``end`` index.</doc>
+<msg timestamp="20230617 15:19:26.065" level="INFO">${result1} = TEST002</msg>
+<status status="PASS" starttime="20230617 15:19:26.064" endtime="20230617 15:19:26.065"/>
+</kw>
+<kw name="Format String" library="String">
+<var>${prod_plat_tpo}</var>
+<arg>${Xpath}</arg>
+<arg>rolesid=${result1}</arg>
+<arg>rolesname=${roleval}</arg>
+<doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
+<msg timestamp="20230617 15:19:26.068" level="INFO">${prod_plat_tpo} = = //div//div[contains(text(), 'TEST002')]/parent::div/parent::div//div[contains(text(), 'Platform Group Engineer')]</msg>
+<status status="PASS" starttime="20230617 15:19:26.066" endtime="20230617 15:19:26.068"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${prod_plat_tpo}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230617 15:19:26.070" level="INFO">= //div//div[contains(text(), 'TEST002')]/parent::div/parent::div//div[contains(text(), 'Platform Group Engineer')]</msg>
+<status status="PASS" starttime="20230617 15:19:26.069" endtime="20230617 15:19:26.070"/>
+</kw>
+<status status="PASS" starttime="20230617 15:19:26.060" endtime="20230617 15:19:26.072"/>
+</iter>
+<iter>
+<var name="${roleval}">Experience Design Leader</var>
+<var name="${idval}">itest003</var>
+<kw name="Convert To Upper Case" library="String">
+<var>${T_P_O}</var>
+<arg>${idval}</arg>
+<doc>Converts string to upper case.</doc>
+<msg timestamp="20230617 15:19:26.074" level="INFO">${T_P_O} = ITEST003</msg>
+<status status="PASS" starttime="20230617 15:19:26.073" endtime="20230617 15:19:26.074"/>
+</kw>
+<kw name="Get Substring" library="String">
+<var>${result1}</var>
+<arg>${T_P_O}</arg>
+<arg>1</arg>
+<doc>Returns a substring from ``start`` index to ``end`` index.</doc>
+<msg timestamp="20230617 15:19:26.077" level="INFO">${result1} = TEST003</msg>
+<status status="PASS" starttime="20230617 15:19:26.076" endtime="20230617 15:19:26.077"/>
+</kw>
+<kw name="Format String" library="String">
+<var>${prod_plat_tpo}</var>
+<arg>${Xpath}</arg>
+<arg>rolesid=${result1}</arg>
+<arg>rolesname=${roleval}</arg>
+<doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
+<msg timestamp="20230617 15:19:26.080" level="INFO">${prod_plat_tpo} = = //div//div[contains(text(), 'TEST003')]/parent::div/parent::div//div[contains(text(), 'Experience Design Leader')]</msg>
+<status status="PASS" starttime="20230617 15:19:26.080" endtime="20230617 15:19:26.080"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${prod_plat_tpo}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230617 15:19:26.084" level="INFO">= //div//div[contains(text(), 'TEST003')]/parent::div/parent::div//div[contains(text(), 'Experience Design Leader')]</msg>
+<status status="PASS" starttime="20230617 15:19:26.084" endtime="20230617 15:19:26.084"/>
+</kw>
+<status status="PASS" starttime="20230617 15:19:26.073" endtime="20230617 15:19:26.084"/>
+</iter>
+<status status="PASS" starttime="20230617 15:19:26.044" endtime="20230617 15:19:26.084"/>
+</for>
+<status status="PASS" starttime="20230617 15:19:26.043" endtime="20230617 15:19:26.094"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230617 15:19:26.095" endtime="20230617 15:19:26.095"/>
+</kw>
+<tag>sanity</tag>
+<status status="PASS" starttime="20230617 15:19:26.034" endtime="20230617 15:19:26.095"/>
+</test>
+<status status="PASS" starttime="20230617 15:19:25.762" endtime="20230617 15:19:26.095"/>
+</suite>
+<suite id="s1-s4" name="TC04" source="C:\Users\infoh\PycharmProjects\Automation_Day1_Projects\Robot Test\TC04.robot">
+<test id="s1-s4-t1" name="ABBBBB" line="30">
+<kw name="ABBBBB">
+<arg>${user}</arg>
+<arg>${pass}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.saucedemo.com/</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230617 15:19:26.041" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20230617 15:19:26.040" endtime="20230617 15:19:29.113"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230617 15:19:29.118" endtime="20230617 15:19:29.302"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id="user-name"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230617 15:19:29.309" level="INFO">Typing text 'standard_user' into text field '//input[@id="user-name"]'.</msg>
+<status status="PASS" starttime="20230617 15:19:29.302" endtime="20230617 15:19:29.556"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//input[@id="user-name"]</arg>
+<arg>CTRL+A+C</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230617 15:19:29.561" level="INFO">Sending key(s) ('CTRL+A+C',) to //input[@id="user-name"] element.</msg>
+<msg timestamp="20230617 15:19:29.857" level="INFO">Pressing special key CONTROL down.</msg>
+<msg timestamp="20230617 15:19:29.857" level="INFO">Sending key A</msg>
+<msg timestamp="20230617 15:19:29.857" level="INFO">Sending key C</msg>
+<msg timestamp="20230617 15:19:29.857" level="INFO">Releasing special key CONTROL.</msg>
+<status status="PASS" starttime="20230617 15:19:29.558" endtime="20230617 15:19:29.913"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${username}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230617 15:19:29.913" level="INFO">standard_user</msg>
+<status status="PASS" starttime="20230617 15:19:29.913" endtime="20230617 15:19:29.913"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230617 15:19:31.919" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230617 15:19:29.913" endtime="20230617 15:19:31.919"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${bvalue}</var>
+<arg>//input[@id="user-name"]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230617 15:19:31.948" level="INFO">${bvalue} = </msg>
+<status status="PASS" starttime="20230617 15:19:31.919" endtime="20230617 15:19:31.948"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${bvalue}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230617 15:19:31.950" level="INFO"/>
+<status status="PASS" starttime="20230617 15:19:31.950" endtime="20230617 15:19:31.950"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//input[@id="password"]</arg>
+<arg>CTRL+V</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230617 15:19:31.954" level="INFO">Sending key(s) ('CTRL+V',) to //input[@id="password"] element.</msg>
+<msg timestamp="20230617 15:19:32.251" level="INFO">Pressing special key CONTROL down.</msg>
+<msg timestamp="20230617 15:19:32.251" level="INFO">Sending key V</msg>
+<msg timestamp="20230617 15:19:32.251" level="INFO">Releasing special key CONTROL.</msg>
+<status status="PASS" starttime="20230617 15:19:31.954" endtime="20230617 15:19:32.275"/>
+</kw>
+<kw name="Get Value" library="SeleniumLibrary">
+<var>${avalue}</var>
+<arg>//input[@id="password"]</arg>
+<doc>Returns the value attribute of the element identified by ``locator``.</doc>
+<msg timestamp="20230617 15:19:32.303" level="INFO">${avalue} = standard_user</msg>
+<status status="PASS" starttime="20230617 15:19:32.276" endtime="20230617 15:19:32.303"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${avalue}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230617 15:19:32.306" level="INFO">standard_user</msg>
+<status status="PASS" starttime="20230617 15:19:32.304" endtime="20230617 15:19:32.306"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230617 15:19:37.312" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230617 15:19:32.308" endtime="20230617 15:19:37.312"/>
+</kw>
+<status status="PASS" starttime="20230617 15:19:26.038" endtime="20230617 15:19:37.312"/>
+</kw>
+<tag>sanity</tag>
+<status status="PASS" starttime="20230617 15:19:26.036" endtime="20230617 15:19:37.312"/>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230617 15:19:37.312" endtime="20230617 15:19:39.468"/>
+</kw>
+<status status="PASS" starttime="20230617 15:19:25.762" endtime="20230617 15:19:39.469"/>
+</suite>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 4 executions.</doc>
+<status status="PASS" starttime="20230617 15:19:25.740" endtime="20230617 15:19:39.477"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="4" fail="0" skip="0">sanity</stat>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Robot Test">Robot Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="TC01">Robot Test.TC01</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="TC02">Robot Test.TC02</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s3" name="TC03">Robot Test.TC03</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s4" name="TC04">Robot Test.TC04</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

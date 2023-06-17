@@ -1,0 +1,61 @@
+[ {
+  "reportUrl" : "http://172.31.208.1:8080/job/ROBOTFRAMEWORK_TEST/11/allure",
+  "data" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 2,
+    "unknown" : 0,
+    "total" : 2
+  }
+}, {
+  "reportUrl" : "http://172.31.208.1:8080/job/ROBOTFRAMEWORK_TEST/10/allure",
+  "data" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 2,
+    "unknown" : 0,
+    "total" : 2
+  }
+}, {
+  "reportUrl" : "http://172.31.208.1:8080/job/ROBOTFRAMEWORK_TEST/9/allure",
+  "data" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 3,
+    "unknown" : 0,
+    "total" : 3
+  }
+}, {
+  "reportUrl" : "http://172.31.208.1:8080/job/ROBOTFRAMEWORK_TEST/8/allure",
+  "data" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 5,
+    "unknown" : 0,
+    "total" : 5
+  }
+}, {
+  "reportUrl" : "http://172.31.208.1:8080/job/ROBOTFRAMEWORK_TEST/7/allure",
+  "data" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 5,
+    "unknown" : 0,
+    "total" : 5
+  }
+}, {
+  "reportUrl" : "http://172.31.208.1:8080/job/ROBOTFRAMEWORK_TEST/6/allure",
+  "data" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 5,
+    "unknown" : 0,
+    "total" : 5
+  }
+} ]
