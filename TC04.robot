@@ -25,7 +25,7 @@ ABBBBB
  
 
 
-    Sleep   5
+    Sleep   3
 *** Test Cases ***
 ABBBBB
     [Tags]    sanity
